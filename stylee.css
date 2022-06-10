@@ -1,0 +1,777 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Oswald', sans-serif;  
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    background-color: transparent;
+    font-family: 'Poppins', sans-serif; 
+    overflow: hidden;
+}
+nav h1{
+    font-size: 40px;
+    color: #ffffff;
+}
+
+header{
+    max-width: 100%;
+    position: relative;
+    height: 900px;
+    background: url(images/pexels-dương-nhân-1529881.jpeg);
+    background-size: cover;
+}
+nav .icon{
+    display: none;
+}
+nav ul {
+    display: flex;
+    list-style: none;
+    margin-top: 17px;
+}
+nav ul li a{
+    text-decoration: none;
+    margin: 20px;
+    padding: 10px 15px;
+    font-size: 20px;
+    color: #ffffff;
+}
+nav ul li a:hover{
+    color: #A2EBD1;
+    background-color: #1111;
+    border-radius: 10px;
+    font-size: 20px;
+    transition: 1s ease-out;
+}
+header ul li a.active
+{
+    color: #31ECAA;
+}
+.mid{
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	align-items: center;
+    margin-top: 300px;
+    color: #fff;
+    font-family: 'Oswald', sans-serif;
+    font-size: 30px;
+    text-align: center;
+    font-weight: 700;
+    line-height: 1.5;
+}
+.mid #btn{
+    padding: 15px 70px;
+    margin: 20px;
+    font-size: 16px;
+    font-weight: 700;
+    background-color: #4AD3A2;
+    color: black;
+    border: none;
+    font-family: 'Oswald', sans-serif;
+}
+.services
+    {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        align-content: stretch;
+        line-height: 1.6;
+        margin-top: 30px;
+    }
+.services h5{
+    margin: 10px;  
+    color: #9C9C9C;
+    font-family: 'Oswald', sans-serif;  
+}
+.services h1{
+    font-family: 'Oswald', sans-serif;  
+    font-weight: 900;
+}
+.services p{
+    width: 900px;
+    text-align: center;
+    margin: 20px;
+    color: #9C9C9C;
+    font-family: 'Oswald', sans-serif;  
+    line-height: 1.4;
+}
+.row{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+    line-height: 1.7;
+    font-family: 'Oswald', sans-serif;  
+    margin: 40px;
+}
+.col{
+    width: 300px;
+    text-align: center;
+    cursor: pointer;
+    margin: 0px 30px 0px 30px;
+}
+.col h3{
+    margin: 10px 0px 0px 5px;
+}
+.col p{
+    color: #9C9C9C;
+    font-family: 'Oswald', sans-serif;  
+    margin-bottom: 30px;
+}
+.col i{
+    font-size: 40px;
+    color: white;
+    background-color:#90DCC1;
+    border-radius: 100px;
+    padding: 29px;
+}
+.col #active{
+    color: #90DCC1;
+    background-color: white;
+    border: solid 1px black;
+}
+.background{
+    background: url(images/pexels-arthur-ogleznev-668761.jpeg);
+    max-width: 100%;
+    height: 550px;
+    background-size: cover;
+}
+.how
+    {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        align-content: stretch;
+        line-height: 1.6;
+        margin: 10px;
+    }
+    .how h1{
+        font-family: 'Oswald', sans-serif;  
+        margin-top: 20px;
+        font-size: 32px;
+        font-family: 'Akshar', sans-serif;
+        color: #83D5B8;
+    }
+    .how p{
+        width: 900px;
+        text-align: center;
+        margin: 10px;
+        color: #4B4B4B;
+        font-family: 'Oswald', sans-serif;  
+        line-height: 1.4;
+    }
+    .col-6{
+        width: 220px;
+        text-align: center;
+        cursor: pointer;
+        margin: 0px 10px 0px 10px;
+        padding: 20px;
+    }
+    .col-6 h3{
+        margin: 10px 0px 0px 5px;
+    }
+    .col-6 p{
+        color: #4B4B4B;
+        font-family: 'Oswald', sans-serif;  
+        margin-bottom: 30px;
+    }
+    .col-6 i{
+        font-size: 70px;
+        color: #83D5B8;
+        border-radius: 100px;
+        padding: 29px;
+    }
+
+.nav-top{
+        display: flex;
+        justify-content: space-around;
+        padding: 10px;
+        background-color: transparent;
+        font-family: 'Poppins', sans-serif; 
+        font-size: 22px;
+}
+.col-2{
+    max-width: 600px;
+    text-align: left;
+    padding: 30px;
+    margin: 5px;
+}
+.col-2 p{
+    margin: 15px;
+    width: 500px;
+    font-size: 22px;
+    color: #6D6A6A;
+}
+.col-2 h1{
+    color: #5B5959;
+    font-size: 30px;
+    margin: 15px;
+}
+.col-2 #btn{
+    margin: 15px;
+    padding: 15px 70px;
+    font-size: 16px;
+    font-weight: 700;
+    background-color: #0B9E6D;
+    color: #fff;
+    border: none;
+    font-family: 'Oswald', sans-serif;
+}
+.row-nom{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        align-items: flex-end;
+        align-content: flex-start;
+
+}
+.col-12 img{
+    width: 100%;
+    height: 200px;
+}
+.services #btn{
+    padding: 20px 45px;
+    margin: 15px;
+    font-size: 16px;
+    font-weight: 700;
+    background-color: #0B9E6D;
+    border: none;
+    color: white;
+    font-family: 'Oswald', sans-serif;
+}
+
+.background-2{
+    background: url(images/BACK-2.jpeg);
+    max-width: 100%;
+    height: 350px;
+    background-size: cover;
+}
+.col-4{
+    width: 250px;
+    text-align: center;
+    cursor: pointer;
+    margin: 0px 30px 0px 30px;
+    border: 1px solid #83D5B8;
+    padding: 30px;
+}
+.colona{
+    max-width: 650px;
+    text-align: left;
+    padding: 20px;
+    margin: 0px 30px 0px 30px;
+}
+.colona p{
+    color: #9C9C9C;
+    font-size: 15px;
+}
+.colona h3{
+    color: #686666;
+}
+.colona i{
+    font-size: 35px;
+    float: left;
+    color: white;
+    background-color:#0B9E6D;
+    border-radius: 100px;
+    padding: 20px;
+    margin: 20px;
+}
+.background-3{
+    background-color: #F7F4F4;
+    max-width: 100%;
+    height: 700px;
+}
+.background-3 h1{
+    color: #0B9E6D;
+}
+.card{
+    position: relative;
+    width: 300px;
+    height: 380px;
+    margin: 10px;
+
+  }
+ 
+  .card .imgBx{
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  bottom: 10px;
+  right: 10px;
+  background: #222;
+  transition: 0.5s;
+  z-index: 1;
+  }
+  
+  .card:hover .imgBx
+  {
+    bottom: 90px;
+  }
+
+  .card .imgBx img{
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+  }
+
+  .card .details{
+      position: absolute;
+      left: 10px;
+      right: 10px;
+      bottom: 10px;
+      height: 70px;
+      text-align: center;
+      
+  }
+
+  .card .details h2{
+   margin: 0;
+   padding: 0;
+   font-weight: 600;
+   font-size: 20px;
+   color: #777;
+   text-transform: uppercase;
+  } 
+
+  .card .details h2 span{
+  font-weight: 500;
+  font-size: 16px;
+  color: #0B9E6D;
+  display: block;
+  margin-top: 5px;
+   }
+
+.card .details button{
+    border: none;
+    font-size: 16px;
+    font-weight: 700;
+    color: #0B9E6D;
+    font-family: 'Oswald', sans-serif;
+}
+.card .details button:hover{
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: #0B9E6D;
+}
+
+
+.skills{
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.skills h1{
+    color: #fff;
+    margin: 30px;
+    font-size: 30px;
+}
+.skills p{
+    color: #6D6A6A;
+}
+.background-4{
+    /* background: url(https://images.pexels.com/photos/1055613/pexels-photo-1055613.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);
+     */background-color: #05061A;
+        width: 100%;
+        min-height: 500px;
+        /* background-size: cover; */
+}
+.col-skills h3{
+    text-align: center;
+    color: white;
+}
+.circle-wrap {
+    margin: 40px auto;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+  }
+  .circle-wrap .circle .mask,
+.circle-wrap .circle .fill {
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  border-radius: 50%;
+}
+
+.mask .fill {
+  clip: rect(0px, 75px, 150px, 0px);
+  background-color: #0B9E6D;
+}
+.circle-wrap .circle .mask {
+    clip: rect(0px, 150px, 150px, 75px);
+  }
+  
+  .mask.full,
+  .circle .fill {
+    animation: fill ease-in-out 3s;
+    transform: rotate(135deg);
+  }
+  
+  @keyframes fill{
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(135deg);
+    }
+  }
+  .circle-wrap .inside-circle {
+    width: 122px;
+    height: 122px;
+    border-radius: 50%;
+    background: #05061A;
+    line-height: 120px;
+    text-align: center;
+    margin-top: 14px;
+    margin-left: 14px;
+    color: #fff;
+    position: absolute;
+    z-index: 100;
+    font-weight: 700;
+    font-size: 2em;
+  }
+ .col-skills{
+    width: 300px;
+	justify-content: space-evenly;
+	align-items: center;
+	align-content: center;
+    margin-top: 40px;
+}
+.col-a{
+    margin: 20px;
+	width: 300px;
+    text-align: center;
+}
+.col-a i{
+    color: #0B9E6D;
+    font-size: 28px;
+    padding: 15px;
+}   
+.col-a p{
+    margin: 5px;
+    color: #6D6A6A; 
+    font-size: 16px;
+}
+
+.background-5{
+    background: url(https://images.pexels.com/photos/1055613/pexels-photo-1055613.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);
+    /* background-color: #05061A; */
+        width: 100%;
+        min-height:650px;
+        background-size: cover;
+}
+
+.form {
+    width: 900px;
+    margin-top: 30px;
+  }
+   
+  form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+form div {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+form input {
+    color: white;
+    width: 295px;
+    padding: 15px;
+    background:none;
+    border: 1px solid #fff;
+  }
+   
+  form input:nth-child(2) {
+    margin: 0px 30px;
+  }
+  form textarea{
+    background:none;
+    border: 1px solid #fff;
+    color: white;
+    margin-top: 10px;
+    padding: 20px;
+  }
+  #btn{
+    padding: 15px 70px;
+    margin: 10px;
+    font-size: 16px;
+    font-weight: 700;
+    background-color: #4AD3A2;
+    color: white;
+    border: none;
+    font-family: 'Oswald', sans-serif;
+  }
+
+  .f_last{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    background-color: black;
+    color: white;
+    gap: 15px;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* MEDIUM */
+@media only screen and (max-width: 1523px) {
+    .background{
+        background: url(images/pexels-arthur-ogleznev-668761.jpeg);
+        width: 100%;
+        height: 900px;
+        background-size: cover;
+    }
+    .services p{
+    width: 600px;
+    text-align: center;
+    margin: 20px;
+    color: #9C9C9C;
+    font-family: 'Oswald', sans-serif;  
+    line-height: 1.4;
+}
+.background-2{
+    background: url(images/BACK-2.jpeg);
+    max-width: 100%;
+    height: 500px;
+    background-size: cover;
+}
+.background-3{
+    height: 1200px;
+}
+.col-4{
+    width: 300px;
+    text-align: center;
+    cursor: pointer;
+    margin: 10px;
+    border: 1px solid #83D5B8;
+    padding: 30px;
+}
+  }
+@media only screen and (max-width: 919px) {
+    
+    .background{
+        width: 100%;
+        height: 1250px;
+        background-size: cover;
+    }
+    .background-3{
+        height: 1880px;
+    }
+    .col-6{
+        width: 210px;
+        text-align: center;
+        cursor: pointer;
+        margin: 0px 10px 0px 10px;
+        padding: 20px;
+    }
+    .col-6 i{
+        font-size: 70px;
+        color: #A2EBD1;
+        border-radius: 100px;
+        padding: 29px;
+    }
+    .how
+    {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        align-content: stretch;
+        line-height: 1.6;
+        margin: 10px;
+    }
+    .how p{
+        width: 350px;
+        text-align: center;
+        margin: 10px;
+        color: #4B4B4B;
+        font-family: 'Oswald', sans-serif;  
+        line-height: 1.4;
+    }
+    .background-2{
+        background: url(images/BACK-2.jpeg);
+        max-width: 100%;
+        height: 860px;
+        background-size: cover;
+    }
+    header{
+        width: 100%;
+        position: relative;
+        height: 900px;
+        background: url(images/pexels-dương-nhân-1529881.jpeg);
+        background-size: cover;
+    }
+}
+@media only screen and (max-width: 700px) {
+    .background-4{
+        padding: 30px;
+    }
+  .card{
+      display: block;
+      margin: 50px;
+  }
+    
+  .topnav a.icon {
+      display: block;
+    float: right;
+  }
+  .topnav nav ul li a{
+    display: none;
+  }
+  .topnav a.icon {
+    position: absolute;
+    right: 0px;
+    font-size: 26px;
+    top: 0;
+  }
+  .topnav #logo{
+      font-size: 40px;
+      margin-right: 250px;
+      padding: 10px;
+  }
+  .services p{
+      width: 400px;
+  }
+
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+    .background{
+        width: 100%;
+        height: 2250px;
+        background-size: cover;
+    }
+    .col-6{
+        width: 210px;
+        text-align: center;
+        cursor: pointer;
+        padding: 20px;
+    }
+    .col-6 i{
+        font-size: 40px;
+        color: #83D5B8;
+        border-radius: 100px;
+        padding: 29px;
+    }
+    .how
+    {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        align-content: stretch;
+        line-height: 1.6;
+        margin: 10px;
+    }
+    .how p{
+        width: 150px;
+        text-align: center;
+        margin: 10px;
+        color: #4B4B4B;
+        font-family: 'Oswald', sans-serif;  
+        line-height: 1.4;
+    }
+    .background-2{
+        background: url(images/BACK-2.jpeg);
+        max-width: 100%;
+        height: 860px;
+        background-size: cover;
+    }
+    header{
+        width: 100%;
+        position: relative;
+        height: 900px;
+        background: url(images/pexels-dương-nhân-1529881.jpeg);
+        background-size: cover;
+    }
+}
