@@ -16,12 +16,13 @@ nav{
 nav h1{
     font-size: 40px;
     color: #ffffff;
+    
 }
 
 header{
     max-width: 100%;
     position: relative;
-    height: 900px;
+    min-height: 900px;
     background: url(images/pexels-dương-nhân-1529881.jpeg);
     background-size: cover;
 }
@@ -142,7 +143,7 @@ header ul li a.active
 .background{
     background: url(images/pexels-arthur-ogleznev-668761.jpeg);
     max-width: 100%;
-    height: 550px;
+    min-height: 550px;
     background-size: cover;
 }
 .how
@@ -291,7 +292,7 @@ header ul li a.active
 .background-3{
     background-color: #F7F4F4;
     max-width: 100%;
-    height: 700px;
+    min-height: 670px;
 }
 .background-3 h1{
     color: #0B9E6D;
@@ -371,7 +372,6 @@ header ul li a.active
 
 
 .skills{
-    margin: 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -478,14 +478,15 @@ header ul li a.active
 }
 
 .form {
-    width: 900px;
+    max-width: 900px;
     margin-top: 30px;
   }
    
-  form {
+form {
     width: 100%;
     display: flex;
     flex-direction: column;
+
 }
 
 form div {
@@ -535,168 +536,46 @@ form input {
     gap: 15px;
   }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* MEDIUM */
-@media only screen and (max-width: 1523px) {
-    .background{
-        background: url(images/pexels-arthur-ogleznev-668761.jpeg);
-        width: 100%;
-        height: 900px;
-        background-size: cover;
+@media only screen and (max-width: 500px) {
+    .row{
+        margin: 0;
     }
-    .services p{
-    width: 600px;
-    text-align: center;
-    margin: 20px;
-    color: #9C9C9C;
-    font-family: 'Oswald', sans-serif;  
-    line-height: 1.4;
-}
-.background-2{
-    background: url(images/BACK-2.jpeg);
-    max-width: 100%;
-    height: 500px;
-    background-size: cover;
-}
-.background-3{
-    height: 1200px;
-}
-.col-4{
-    width: 300px;
-    text-align: center;
-    cursor: pointer;
-    margin: 10px;
-    border: 1px solid #83D5B8;
-    padding: 30px;
-}
-  }
-@media only screen and (max-width: 919px) {
-    
-    .background{
-        width: 100%;
-        height: 1250px;
-        background-size: cover;
-    }
-    .background-3{
-        height: 1880px;
-    }
-    .col-6{
-        width: 210px;
+    .services{
         text-align: center;
-        cursor: pointer;
-        margin: 0px 10px 0px 10px;
-        padding: 20px;
+        width: 100%;
     }
-    .col-6 i{
-        font-size: 70px;
-        color: #A2EBD1;
-        border-radius: 100px;
-        padding: 29px;
+    .services p{    
+        margin: 0;
+        width: 300px;
     }
-    .how
-    {
+    form input {
+        color: white;
+        width:50px;
+        padding: 15px;
+        margin: 0;
+        background:none;
+        border: 1px solid #fff;
+      }
+      .textarea
+    .form {
         width: 100%;
         display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        align-items: center;
-        align-content: stretch;
-        line-height: 1.6;
-        margin: 10px;
+        flex-direction: row;
     }
-    .how p{
-        width: 350px;
-        text-align: center;
-        margin: 10px;
-        color: #4B4B4B;
-        font-family: 'Oswald', sans-serif;  
-        line-height: 1.4;
+    .mid h1{
+        font-size:27px;
     }
-    .background-2{
-        background: url(images/BACK-2.jpeg);
-        max-width: 100%;
-        height: 860px;
-        background-size: cover;
-    }
-    header{
-        width: 100%;
-        position: relative;
-        height: 900px;
-        background: url(images/pexels-dương-nhân-1529881.jpeg);
-        background-size: cover;
-    }
-}
-@media only screen and (max-width: 700px) {
+    form textarea{
+        margin-top: 10px;
+        padding: 0px;
+      }
     .background-4{
         padding: 30px;
     }
   .card{
       display: block;
-      margin: 50px;
+
   }
-    
   .topnav a.icon {
       display: block;
     float: right;
@@ -715,19 +594,13 @@ form input {
       margin-right: 250px;
       padding: 10px;
   }
-  .services p{
-      width: 400px;
-  }
-
   .topnav.responsive a {
     float: none;
     display: block;
     text-align: left;
   }
     .background{
-        width: 100%;
-        height: 2250px;
-        background-size: cover;
+        display: block;
     }
     .col-6{
         width: 210px;
@@ -743,7 +616,6 @@ form input {
     }
     .how
     {
-        width: 100%;
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
@@ -751,27 +623,58 @@ form input {
         align-items: center;
         align-content: stretch;
         line-height: 1.6;
-        margin: 10px;
     }
     .how p{
-        width: 150px;
+        width: 350px;
         text-align: center;
-        margin: 10px;
         color: #4B4B4B;
         font-family: 'Oswald', sans-serif;  
         line-height: 1.4;
     }
     .background-2{
-        background: url(images/BACK-2.jpeg);
-        max-width: 100%;
-        height: 860px;
+        height: 800px;
         background-size: cover;
     }
-    header{
-        width: 100%;
-        position: relative;
-        height: 900px;
-        background: url(images/pexels-dương-nhân-1529881.jpeg);
-        background-size: cover;
+    .col-4{
+        margin: 10px;
     }
+    .nav-top{
+        display: flex;
+        justify-content: space-around;
+        padding: 10px;
+        background-color: transparent;
+        font-family: 'Poppins', sans-serif; 
+        font-size: 17px;
+        flex-direction: column;
+}
+.col-2{
+    max-width: 600px;
+    text-align: left;
+    padding: 0;
+}
+.col-2 img{
+    width: 100%;
+}
+.col-2 p{
+    margin: 15px;
+    width: 360px;
+    font-size: 22px;
+    color: #6D6A6A;
+}
+.col-2 h1{
+    color: #5B5959;
+    font-size: 30px;
+    margin: 15px;
+}
+.col-2 #btn{
+    margin: 15px;
+    padding: 15px 70px;
+    font-size: 16px;
+    font-weight: 700;
+    background-color: #0B9E6D;
+    color: #fff;
+    border: none;
+    font-family: 'Oswald', sans-serif;
+}
+
 }
