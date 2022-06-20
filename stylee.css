@@ -1,24 +1,9 @@
-
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: 'Oswald', sans-serif;  
+    font-family: 'Roboto', sans-serif;
 }
-nav{
-    display: flex;
-    justify-content: space-around;
-    padding: 10px;
-    background-color: transparent;
-    font-family: 'Poppins', sans-serif; 
-    overflow: hidden;
-}
-nav h1{
-    font-size: 40px;
-    color: #ffffff;
-    
-}
-
 header{
     max-width: 100%;
     position: relative;
@@ -26,31 +11,102 @@ header{
     background: url(images/pexels-dương-nhân-1529881.jpeg);
     background-size: cover;
 }
-nav .icon{
-    display: none;
-}
-nav ul {
+nav{
     display: flex;
-    list-style: none;
-    margin-top: 17px;
+    justify-content: space-around;
+    height: 80px;
+    width: 100%;
+    background:transparent;
+
 }
-nav ul li a{
+label.logo{
+    font-size: 35px;
+    font-weight: bold;
+    color: white;
+    padding: 0 50px;
+    line-height: 80px;
+}
+.logo_hd{
+    display: none;
+    font-size: 35px;
+    font-weight: bold;
+    color: white;
+    padding: 0 50px;
+    line-height: 80px;
+}
+nav ul{
+    float: right;
+    margin-right: 0 10px;
+    
+}
+nav li{
+    display: inline;
+    margin: 0 14px;
+    line-height: 80px;
+}
+
+nav a{
+    color: white;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    border: 1px solid transparent;
+    padding: 7px 10px;
     text-decoration: none;
-    margin: 20px;
-    padding: 10px 15px;
-    font-size: 20px;
-    color: #ffffff;
 }
-nav ul li a:hover{
-    color: #A2EBD1;
-    background-color: #1111;
-    border-radius: 10px;
-    font-size: 20px;
-    transition: 1s ease-out;
+nav a.active{
+    color: #4AD3A2;
 }
-header ul li a.active
-{
-    color: #31ECAA;
+nav #icon{
+    color: white;
+    font-size: 25px;
+    line-height: 80px;
+    float: right;
+    margin-left: 40px;
+    cursor: pointer;
+    display: none;
+    z-index: 1;
+}
+
+@media (max-width: 1100px){
+    nav #icon{
+        display: block;
+        font-size: 25px;
+    }
+    nav ul{
+        position: absolute;
+        width: 70%;
+        height: 100%;
+        background-color: #2f3640;
+        top: 0px;
+        left: -1000%;
+        text-align: left;
+        transition: all .3s ease-in-out;
+    }
+    nav li{
+        display: block;
+        margin: 50px 40px;
+        line-height: 30px;
+    }
+    nav li a{
+        border-bottom: 3px solid white;
+        width: 100%;
+        border-width: 50%;
+    }
+    nav a{
+        font-size: 20px;
+
+    }
+    nav ul.show{
+        left: 0;
+    }
+    .logo_hd{
+        display: block;
+        font-size: 35px;
+        font-weight: bold;
+        color: white;
+        padding: 0 50px;
+        line-height: 80px;
+    }
 }
 .mid{
 	display: flex;
@@ -71,7 +127,7 @@ header ul li a.active
     font-size: 16px;
     font-weight: 700;
     background-color: #4AD3A2;
-    color: black;
+    color: white;
     border: none;
     font-family: 'Oswald', sans-serif;
 }
@@ -523,6 +579,10 @@ form input {
     color: white;
     border: none;
     font-family: 'Oswald', sans-serif;
+    cursor: pointer;
+  }
+  #btn:hover{
+      background-color: #086845;
   }
 
   .f_last{
@@ -535,10 +595,18 @@ form input {
     color: white;
     gap: 15px;
   }
+  .logo-slider{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	align-items: center;
+	align-content: center;
+}
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 400px) {
     .row{
-        margin: 0;
+        margin-top: 20px;
     }
     .services{
         text-align: center;
@@ -550,20 +618,34 @@ form input {
     }
     form input {
         color: white;
-        width:50px;
+        width:90px;
         padding: 15px;
         margin: 0;
         background:none;
         border: 1px solid #fff;
       }
-      .textarea
-    .form {
+      textarea{
         width: 100%;
         display: flex;
-        flex-direction: row;
+        padding: 20px;
+    }
+    #btn{
+        margin: 30px;
+
     }
     .mid h1{
-        font-size:27px;
+        font-size: 43px;
+        margin: 10px;
+    }
+    .mid #btn{
+        padding: 12px 40px;
+        margin: 20px;
+        font-size: 16px;
+        font-weight: 700;
+        background-color: #4AD3A2;
+        color: white;
+        border: none;
+        font-family: 'Oswald', sans-serif;
     }
     form textarea{
         margin-top: 10px;
@@ -576,29 +658,7 @@ form input {
       display: block;
 
   }
-  .topnav a.icon {
-      display: block;
-    float: right;
-  }
-  .topnav nav ul li a{
-    display: none;
-  }
-  .topnav a.icon {
-    position: absolute;
-    right: 0px;
-    font-size: 26px;
-    top: 0;
-  }
-  .topnav #logo{
-      font-size: 40px;
-      margin-right: 250px;
-      padding: 10px;
-  }
-  .topnav.responsive a {
-    float: none;
-    display: block;
-    text-align: left;
-  }
+  
     .background{
         display: block;
     }
