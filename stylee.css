@@ -545,10 +545,11 @@ form {
 
 }
 
-form div {
+form div{
     width: 100%;
     display: flex;
     justify-content: space-between;
+    flex-direction: row;
     margin-bottom: 10px;
 }
 
@@ -616,9 +617,9 @@ form input {
         margin: 0;
         width: 300px;
     }
+    
     form input {
         color: white;
-        width:90px;
         padding: 15px;
         margin: 0;
         background:none;
@@ -628,6 +629,13 @@ form input {
         width: 100%;
         display: flex;
         padding: 20px;
+    }
+    form div{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        margin: 10px;
     }
     #btn{
         margin: 30px;
